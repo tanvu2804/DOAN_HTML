@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/72de69e827.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  </style>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/styles.css">
+  <title>ĐỒ ÁN</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $(".toggle").on("click", function () {
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        } else {
+          $(".item").addClass("active");
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Phần tab -->
+  <div class="container">
+    <header class="justify-content-center">
+      <nav class=" navbar-expand-lg  ">
+        <ul class="menu">
+          <li class="logo">
+            <div class="box-circle d-flex align-items-center">
+              <a href="/">
+                <img src="public/images/logoheader.svg" class="img-fluid" alt="Football club logo"> </a>
+            </div>
+          </li>
+          <li class="item"><a class="nav-link-custom active-nav-item" aria-current="page" href="#">HOME</a></li>
+          <li class="item dropdown">
+            <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              FIXTURES
+            </a>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item " type="button">Action</button></li>
+              <li><button class="dropdown-item " type="button">Fixtures</button></li>
+              <li><button class="dropdown-item" type="button">Results</button></li>
+              <li><button class="dropdown-item" type="button">League Tables</button></li>
+              <li><button class="dropdown-item" type="button">Line Ups</button></li>
+              <li><button class="dropdown-item" type="button">Match Report</button></li>
+            </ul>
+          </li>
+          <li class="item dropdown">
+            <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              PLAYERS
+            </a>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item " type="button">Action</button></li>
+              <li><button class="dropdown-item " type="button">Fixtures</button></li>
+              <li><button class="dropdown-item" type="button">Results</button></li>
+              <li><button class="dropdown-item" type="button">League Tables</button></li>
+              <li><button class="dropdown-item" type="button">Line Ups</button></li>
+              <li><button class="dropdown-item" type="button">Match Report</button></li>
+            </ul>
+          </li>
+          <li class="item"><a class="nav-link-custom" aria-current="page" href="#">HISTORY</a></li>
+          <li class="item"><a class="nav-link-custom" aria-current="page" href="#">TICKET</a></li>
+          <li class="item"><a class="nav-link-custom" aria-current="page" href="#">SHOP</a></li>
+          <div class="d-flex box-toggle align-items-center">
+            <li class="toggle"><span class="bars"></span></li>
+            <li class="item button">
+              <a href="#"><i aria-hidden="true" class="fab fa-youtube"></i> </a>
+            </li>
+            <li class="item button">
+              <a href="#"><i class="fa fa-ticket icon-ticket" aria-hidden="true"></i></a>
+            </li>
+            <li class="item button">
+              <a href="#"><i aria-hidden="true" class="fas fa-search"></i></a>
+            </li>
+            <div class="vertical-line"></div>
+            <li class="cart">
+              <a class="nav-link-custom none-botton-border d-flex align-items-center" href="#">$0.00 <img
+                  src="./public/images/ic_cart.svg" width="18px" height="18px" />
+                <div class="quantity">
+                  0
+                </div>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <!-- Phần header dưới tab -->
+
+    <div class="bacgr">
+      <div class="row1">
+        <!-- cot ben trai -->
+        <div class="col-3">
+          <div class="d-flex flex-column bg-transparent">
+            <div class="dongdau">
+              <div class="p-2">
+                <h2>OUR AMBITION IS</h2>
+              </div>
+              <div class="p-2"><img src="public/images/slider-text.png" alt="anh chữ"></div>
+              <div class="p-2">
+                <div class="bor">
+                  <h2>SEASON 2022/23</h2>
+                </div>
+              </div>
+              <div class="p-2">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cot ben phai -->
+        <div class="col-9">
+          <img src="public/images/slider.png" alt="ảnh không biết miêu tả sao thầy :>>">
+        </div>
+
+
+      </div>
+    </div>
+    <content-col>
+      <div class="back">
+        <div class="">
+          <div class="ule">
+            <ul>
+              <div class="el">
+                <li class="Mas"><b>MATCHES</b></li>
+                <li><a href="#">First Team</a></li>
+                <li><a href="#">Women's Team</a></li>
+                <li><a href="#">Under 21</a></li>
+                <li><a href="#">Under 17</a></li>
+                <li style="float:right"><a class="active" href="#about">ALL FIXTURES</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- Phần này khó dữ chèn :>> -->
+        <div class="phankhoai">
+          <div class="rowtit">
+            <div class="container pb-5">
+              <div class="row ">
+                <!-- Phan ben trai  -->
+                <div class="col-sm-12 col-lg-3 col-md-6 px-0">
+                  <div class="card">
+                    <div class="card_title">
+                      <div class="rowtit-nav d-flex align-items-center justify-content-between">
+                        <div class="col-2tit">
+                          <h2><b> 26</b></h2>
+                        </div>
+                        <div class="col-5tt">
+                          <div class="eu">
+                            <h2><b>SUNDAY</b></h2>
+                            <h2>FEBRUARY</h2>
+                          </div>
+                        </div>
+                        <div class="col-5tt">
+                          <div class="hi">
+                            <h2>LAST RESULT</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card_desc">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="head-column">
+                          </div>
+                          <div class="content-column">
+                            <div class="image-container">
+                              <img src="public/images/logoho.png" alt="">
+                            </div>
+                          </div>
+                          <div class="bottom-column">
+                            <h3><b>Vensica FC</b></h3>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="head-columncenter">
+                            <img src="public/images/icon-prime-leaguetitle cúp.svg" alt="">
+                          </div>
+                          <div class="content-columncenter">
+                            <h2>3 : 1</h2>
+                          </div>
+                          <div class="bottom-columncenter">
+                            <h3>Paradise<br>Stadium</h3>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="head-column">
+                          </div>
+                          <div class="content-column">
+                            <div class="image-container">
+                              <img src="public/images/logoquabanh.png" alt="">
+                            </div>
+                          </div>
+                          <div class="bottom-column">
+                            <h3><b>Shields.U</b></h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card_bottomn">
+                      <div class="col-5">
+                        <div class="butt"><a href="#"><span>HIGHTLIGHTS</span></a></div>
+                      </div>
+                      <div class="col-5">
+                        <div class="butt"><a href="#"><span>MATCH REPORT</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Ben giua -->
+                <div class="col-sm-12 col-lg-6 col-md-6 px-0">
+                  <div class="card">
+                    <div class="card_title">
+                      <div class="rowtit-nav d-flex align-items-center justify-content-between">
+                        <div class="col-2giua">
+                          <h2><b>07</b></h2>
+                        </div>
+                        <div class="col-5giua">
+                          <div class="eu">
+                            <h2><b>SATURDAY</b></h2>
+                            <h2>MARCH</h2>
+                          </div>
+                        </div>
+                        <div class="col-5giua">
+                          <div class="hi">
+                            <h2>LAST RESULT</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card_desc">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="head-column1">
+                          </div>
+                          <div class="content-column1">
+                            <div class="image-container">
+                              <div class="a">
+                                <img src="public/images/logorong.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bottom-column1">
+                            <h3><b>Vensica FC</b></h3>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="head-columncenter">
+                            <img src="public/images/icon-league-2.svg" alt="">
+                          </div>
+                          <div class="content-columncenter1">
+                            <!-- Đồng hồ -->
+                            <div class="clokblok">
+                              <div id="digital-clock"></div>
+                              <div class="clockk">
+                                <span>DAYS <span>HOURS</span><span>MIN</span><span>SEC</span></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bottom-columncenter">
+                            <h3>Noble Stadium</h3>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="head-column1">
+                          </div>
+                          <div class="content-column1">
+                            <div class="image-container">
+                              <div class="a">
+                                <img src="public/images/logoho.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bottom-column1">
+                            <h3><b>Shields.U</b></h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card_bottomn">
+                      <div class="col-4">
+                        <div class="butt"><a href="#"><span>BUY TICKET</span></a></div>
+                      </div>
+                      <div class="col-4">
+                        <div class="butt"><a href="#"><span>HEAD TO HEAD</span></a></div>
+                      </div>
+                      <div class="col-4">
+                        <div class="buttkhac"><a href="#">
+                            <p><b>bet</b><span><b>365</b></span></p>
+                          </a></div>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- Ben phai -->
+                <div class="col-sm-12 col-lg-3 col-md-6 px-0">
+                  <div class="card">
+                    <div class="card_title">
+                      <div class="rowtit-nav d-flex align-items-center justify-content-between">
+                        <div class="col-2tit">
+                          <h2><img src="public/images/icon-league-white-1px.svg" alt=""></h2>
+                        </div>
+                        <div class="col-5tt">
+                          <div class="eu">
+                            <h2><b>PRIME LEAGUE</b></h2>
+                          </div>
+                        </div>
+                        <div class="col-5tt">
+                          <div class="hi">
+                            <h2>FULL TABLE</h2>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card_desc">
+                      <p>
+                        <!-- Bang diem so -->
+                      <div class="tablematch">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th></th>
+                              <th class="p">P</th>
+                              <th class="w">W</th>
+                              <th class="d">D</th>
+                              <th class="l">L</th>
+                              <th class="pts">Pts</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="block-macth">
+                              <td class="pos">1</td>
+                              <td class="club">
+                                <img src="public/images/Rangers.png" alt="">
+                                <a href="#">Rangers United</a>
+                              </td>
+                              <td class="p">12</td>
+                              <td class="w">7</td>
+                              <td class="d">1</td>
+                              <td class="l">3</td>
+                              <td class="pts">25</td>
+                            </tr>
+                            <tr class="highlighted">
+                              <td class="pos">2</td>
+                              <td class="club">
+                                <img src="public/images/logoho.png" alt="">
+                                <a href="">Vensica FC</a>
+                              </td>
+                              <td class="p">12</td>
+                              <td class="w">8</td>
+                              <td class="d">2</td>
+                              <td class="l">2</td>
+                              <td class="pts">23</td>
+                            </tr>
+                            <tr class="block-macth">
+                              <td class="pos">3</td>
+                              <td class="club">
+                                <img src="public/images/logorong.png" alt="">
+                                <a href="#">Dragons FC</a>
+                              </td>
+                              <td class="p">12</td>
+                              <td class="w">6</td>
+                              <td class="d">2</td>
+                              <td class="l">4</td>
+                              <td class="pts">22</td>
+                            </tr>
+                            <tr class="block-macth">
+                              <td class="pos">4</td>
+                              <td class="club">
+                                <img src="public/images/logoquabanh.png" alt="">
+                                <a href="#">Shields United</a>
+                              </td>
+                              <td class="p">15</td>
+                              <td class="w">9</td>
+                              <td class="d">3</td>
+                              <td class="l">4</td>
+                              <td class="pts">19</td>
+                            </tr>
+                            <tr class="block-macth">
+                              <td class="pos">5</td>
+                              <td class="club"><img src="public/images/icon-club-wolves-25x25.png" alt="">
+                                <a href="#">City Wolves</a>
+                              </td>
+                              <td class="p">11</td>
+                              <td class="w">5</td>
+                              <td class="d">1</td>
+                              <td class="l">3</td>
+                              <td class="pts">15</td>
+                            </tr>
+                            <tr class="block-macth">
+                              <td class="pos">6</td>
+                              <td class="club"><img src="public/images/Eagles.png" alt="">
+                                <a href="#">Eagles FC</a>
+                              </td>
+                              <td class="p">11</td>
+                              <td class="w">5</td>
+                              <td class="d">2</td>
+                              <td class="l">0</td>
+                              <td class="pts">13</td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </content-col>
+
+
+
+
+
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script -->
+  <!-- src="https://public-assets.envato-static.com/assets/market/core/standardised_google_analytics_helpers-3bc54d0cbac28acaf9e49915490168f52bb9b8bea5d35f6edabb67a686a83af4.js"
+    nonce="I4pZWgBCcZRMp+gY29kq8g=="></script> -->
+  <script src="public/javascripts/javascripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,768 @@
+body {
+    background-color: #1e274d;
+
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.container{
+    padding-left: 0px;
+}
+
+/* Bien dung nhieu */
+:root {
+    --text-color: #202844;
+}
+
+:root {
+    --my-color: #d82148;
+    --container-widget-width: 64px;
+    --container-widget-flex-grow: 0;
+}
+:root{
+    --your-color:#f5f5f5;
+}
+
+/*_____________Phần Body-------------------------------------------------------------------------_____________________ */
+.navbar img {
+    display: inline-block;
+}
+
+/* box bao quanh logo */
+.box-circle {
+    padding: 6px;
+    background-color: var(--my-color);
+    border-radius: 50%;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+/* cac icon */
+
+.boderheader {
+    background-color: white;
+    width: 1420px;
+    height: 300px;
+}
+
+.navbar-brand {
+    padding-left: 100px;
+}
+
+.icon-ticket {
+    transform: rotate(-45deg);
+}
+
+
+
+.container-icon {
+    margin-right: 10px;
+}
+
+.activearia-currentpagetrue {
+    color: var(--my-color);
+}
+
+.activearia-currentpagetrue:hover {
+    color: var(--my-color);
+}
+
+.dropdown-item:hover {
+    background-color: #fff;
+}
+
+.nav-item-custom {
+    margin: 0 10px;
+    color: var(--my-color);
+}
+
+.nav-link-custom {
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+/* cac nut khac */
+.nav-link-custom:hover {
+    color: var(--my-color);
+    text-decoration: none;
+    border-bottom: 3px solid var(--my-color);
+}
+
+/* nut home */
+.active-nav-item {
+    color: var(--my-color);
+    text-decoration: none;
+    border-bottom: 3px solid var(--my-color);
+}
+
+/* nut mui ten */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+    border-radius: 0%;
+    background-color: #FDFDFD;
+    padding: 0;
+}
+
+.dropdown-item {
+    border-bottom: 1px solid #C8CBCD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* nut so 0 tren icon bag */
+.quantity {
+    border-radius: 50%;
+    background-color: var(--my-color);
+    height: 20px;
+    width: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 25px;
+}
+
+.none-botton-border:hover {
+    border-bottom: 0px;
+}
+
+
+/* --------------------------------------------------------- */
+.toggle {
+    cursor: pointer;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars:before,
+.bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.bars:before {
+    top: 5px;
+}
+
+.bars:after {
+    top: -5px;
+}
+
+nav {
+    background: #fff;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+
+.logo a,
+.toggle a {
+    font-size: 20px;
+}
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    MARGIN-BOTTOM: AUTO;
+    padding-right: 77px;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.cart {
+    width: auto;
+    order: 3;
+    display: block;
+    
+}
+
+.item.active {
+    display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+    cursor: pointer;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars:before,
+.bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.bars:before {
+    top: 5px;
+}
+
+.bars:after {
+    top: -5px;
+}
+
+.vertical-line {
+    border-left: 1px solid black;
+    margin: 0 15px;
+    height: 50px;
+    order: 2;
+}
+
+/* Tablet menu */
+@media all and (min-width: 768px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .cart {
+        width: auto;
+        order: 2;
+        display: block;
+    }
+
+    .toggle {
+        order: 0;
+    }
+
+    .box-toggle {
+        order: 1;
+    }
+
+    .button a {
+        text-decoration: none;
+        margin: 0px 10px;
+        color: black;
+    }
+
+    .button a:hover {
+        color: var(--my-color);
+    }
+
+}
+
+/* Desktop menu */
+/* 1025 */
+@media all and (min-width: 1025px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .box-toggle {
+        order: 3;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+    .menu li.button {
+        padding-right: 0;
+    }
+}
+
+/* ---------Phần Tab------------------------------------------------------------------------------- */
+/* phan noi dung duoi tab */
+.bacgr {
+    background-color: #151D3B;
+    background-image: url("https://power.themeton.com/vensica/wp-content/uploads/sites/12/2023/03/slider-shades.png"); 
+    width: 100%; 
+    height: 650px; 
+}
+.col-9 {
+    width: 55%;
+    flex: 0 0 auto;
+    padding: 0 15px;
+}
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-3 {
+    width: 45%;
+    flex: 0 0 auto;
+    padding: 100px 15px;
+}
+/*  */
+ .dongdau h2{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+.col-3 p{
+    border-bottom: var(--my-color) solid 2px;
+    width: 152px;
+} 
+.col-9 img{
+    margin-top: 40px;
+    margin-left: -68px
+}
+
+.p-2 h2{
+    font-size: 22px;
+     color: white;
+    text-align: center;
+
+}
+.p-2{
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	}
+.border{
+    display: flex;
+	justify-content: center;
+    align-items: center;
+
+}
+.bor{
+    padding-top: 30px;
+}
+
+.back{
+    background-color: white;
+    width: 100%;
+    height: 450px;;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 63px;
+}
+.container{
+     width: 1300px;
+    margin: 0 auto;
+    padding:0 15px;
+    
+}
+
+
+.ule ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+.el li {
+    float: left;
+  }
+  
+.el li a {
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.el li a:hover {
+    color :red
+  }
+.Mas{
+    font-size: 20px;
+    border-right: var(--text-color) solid 1px ;
+    height: 40px;   
+}
+.Mas{
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+.el .active {
+    font-size: 10px;
+    background-color: var(--your-color);
+    width: 141px;
+    color :var(--text-color)
+  }
+  .el .active:hover {
+    font-size: 10px;
+    background-color: #C8CBCD;
+    width: 141px;
+    color :var(--text-color)
+  }
+  /*  */
+  .card {
+    padding: 0;
+    border: none;
+  }
+  .card_title {
+    /* display: inline; */
+    background-color:var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+ 
+  .rowtit {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.rowtit-nav{
+    padding: 6px 12px;
+}
+.col-5tt{
+    /* display: inline; */
+    width: 42%;
+    flex: 0 0 auto;
+    padding: 0px 0px;
+   
+}
+.px-3 {
+    padding-right: 0.5rem!important;
+    padding-left: 0.5rem!important;
+}
+
+.col-2tit{
+    width: 16%;
+    flex: 0 0 auto;
+    padding: 0px 0px;
+}
+.eu h2{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+.hi h2{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+  .col-2tit h2 b{
+    font-size: 29px;
+  }
+  .col-2tit img{
+    height: 34px;
+
+  }
+  
+  .card_title h2 {
+  
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: #ffffff;
+  
+  }
+
+.col-5giua{
+    width: 46%;
+    flex: 0 0 auto;
+    padding: 0px 0px;
+   
+}
+.col-2giua{
+    /* display: inline; */
+    width: 9%;
+    flex: 0 0 auto;
+    padding: 0px 0px;
+}
+.col-2giua h2 b{
+    font-size: 29px;
+  }
+
+  .col-4{
+    width: 33.3%;
+    flex: 0 0 auto;
+    padding: 0px 5px; 
+}
+.col-5{
+    width: 50%;
+    flex: 0 0 auto;
+    padding: 0 0px;
+}
+.butt span{
+    color: var(--text-color);
+    font-size: 0.6rem;
+    font-weight: 600;
+    line-height: 6.2em;
+    background-color: var(--your-color);
+    width: 2rem;
+    padding: 13px 24px 13px 24px;
+    
+}
+.buttkhac p{
+    color: #027b5b;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 2.2em;
+    background-color: var(--your-color);
+    padding: 7px 7px;
+        margin: 7px;
+}
+
+.buttkhac span{
+    color: #f9dc1c;
+}
+.buttkhac p:hover{
+    color: #027b5b;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 2.2em;
+    background-color: rgb(238, 232, 232);
+    padding: 7px 7px;
+    margin: 7px;
+}
+.buttkhac a{
+    text-decoration: none;
+}
+.butt a{
+    text-decoration: none;
+}
+
+.butt span:hover{
+    color:var(--text-color);
+    font-size: 0.6rem;
+    font-weight: 600;
+    line-height: 6.2em;
+    background-color:  rgb(238, 232, 232);
+    width: 2rem;
+    padding: 13px 24px 13px 24px;
+    
+}
+.card_bottomn{
+    display: flex;
+    text-align: center;
+}
+.cuoibar{
+    font-size: 10px;
+}
+/* Chia bố cục thứ 2 */
+.head-column{
+    width: 100%;
+    height: 20px;
+}
+.content-column{
+    width: 100%;
+    height: 90px;
+}
+.content-column img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 70%;
+    height: 80px;
+}
+.bottom-column{
+    width: 100%;
+    height: 61px;;
+}
+.col-4 h3{
+    color: var(--text-color);
+    font-size: 10px;
+    text-align: center;
+    
+}
+.head-columncenter{
+  width:100%;
+  height: 60px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+  }
+.head-columncenter img{
+    width:100%;
+    height: 60px;
+  }
+.content-columncenter{
+  width: 100%;
+  height:40px;
+   text-align: center;
+}
+.content-columncenter1{
+    width: 100%;
+    height:70px;
+     text-align: center;
+  }
+.content-columncenter h2{
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 2px 2px 2px 2px;
+    background-image: url(https://power.themeton.com/vensica/wp-content/uploads/sites/12/2023/03/result-bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #ffffff;
+
+}
+.bottom-columncenter{
+  width: 100%;
+  height: 40px;
+}
+.card{
+    border: #dedede solid 0.0001px;
+    border-radius: 0px;
+}
+.a img{
+    width: 100%;
+    height: 100px;
+}
+.head-column1{
+    width: 100%;
+    height: 10px;
+}
+.content-column1{
+    width: 100%;
+    height: 100px;
+}
+.bottom-column1{
+    width: 100%;
+    height: 30px;
+}
+/* đồng hồ */
+#digital-clock{
+    font-size: 22px;
+    font-weight: bold;
+}
+.clockk span{
+    font-size: 13px;
+    margin-right: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+/* Bang ti so */
+.tablematch{
+    font-size: 13px;
+    color: var(--text-color);
+    
+}
+.club {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.club a{
+    font-size: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.block-macth .club a:hover{
+    font-size: 10px;
+    color: var(--my-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.tablematch img{
+    height: 25px;
+    width: 25px;
+}
+.tablematch thead{
+      color:var(--my-color);
+}
+.block-macth{
+    border-top: #efefef solid 0.0001px;
+}
+.highlighted{
+    border-top: #efefef solid 0.0001px;  
+    background-color: #f3f9fb; 
+}
+td{
+    padding: 3px;
+    font-size: 12px;    
+}
+.tablematch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
